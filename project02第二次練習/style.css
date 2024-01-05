@@ -1,0 +1,188 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+}
+body img.fixed-img {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  z-index: -10;
+  bottom: 0;
+  left: 0;
+}
+body header {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+body header section.logo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 2 1 400px;
+}
+body header section.logo img.logo {
+  width: 6vw;
+  height: 6vw;
+}
+body header section.logo h1 {
+  font-size: 2.5rem;
+}
+body header nav {
+  flex: 5 1 500px;
+}
+body header nav ul {
+  display: flex;
+  justify-content: space-around;
+}
+body header nav ul li {
+  list-style-type: none;
+  font-size: 1.35rem;
+}
+body header nav ul li a {
+  text-decoration: none;
+  color: #000;
+  transition: 0.2s;
+  padding-bottom: 0.2rem;
+}
+body header nav ul li a:hover {
+  color: rgb(145, 73, 240);
+  border-bottom: 2px solid rgb(145, 73, 240);
+}
+body section.filter {
+  background-image: url(./images/日本櫻花.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+body section.filter div.filter {
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  z-index: -1;
+}
+body section.filter h3 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+}
+body section.senery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 0;
+  background-color: #fff;
+}
+body section.senery h2 {
+  font-size: 2rem;
+  padding-bottom: 1rem;
+}
+body section.senery div.circles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+body section.senery div.circles div.circle {
+  padding: 0 2.5rem;
+}
+body section.senery div.circles div.circle img {
+  width: 25vh;
+  height: 25vh;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+body section.senery div.circles div.circle img:hover {
+  padding: 0.3rem;
+  border: 2px solid rgb(145, 73, 240);
+}
+body section.senery div.circles div.circle p {
+  text-align: center;
+}
+body section.empty div.filter {
+  width: 100%;
+  height: 70vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body section.empty div.filter h3 {
+  color: #fff;
+  font-size: 2rem;
+}
+body section.google-map {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+body section.google-map h2 {
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+body section.google-map p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+body section.google-map iframe {
+  width: 100%;
+  height: 40vh;
+}
+body div.filter {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+body div.filter img {
+  width: 20%;
+}
+body div.filter h2 {
+  font-size: 2.5rem;
+  color: #fff;
+}
+body div.filter div.links {
+  padding-top: 1rem;
+}
+body div.filter div.links a {
+  padding: 1rem;
+}
+body div.filter div.links a img {
+  width: 5vh;
+}
+
+@media screen and (max-width: 500px) {
+  body header section.logo {
+    display: flex;
+    flex-direction: column;
+  }
+  body header section.logo img.logo {
+    width: 50vw;
+    height: 50vw;
+  }
+  body header nav ul {
+    display: flex;
+    flex-direction: column;
+  }
+  body header nav ul li {
+    padding: 0.2rem 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: DFKai-sb, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+header div.top {
+  padding: 2rem 2rem 1.5rem;
+  background-image: url(./images/background.png);
+  background-size: cover;
+}
+
+header div.top h1 {
+  font-size: 2rem;
+}
+
+header div.top p {
+  font-size: 0.8rem;
+}
+
+header nav {
+  background-color: #000;
+}
+
+header nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+@media screen and (max-width: 500px) {
+  nav ul {
+    flex-direction: column;
+  }
+}
+header nav li {
+  padding: 1rem;
+  transition: all 0.3s ease-out;
+}
+
+header nav a.active {
+  color: #ff0;
+  transition: all 0.3s ease-out;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav li:hover {
+  background-color: #ffd98c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section {
+  padding: 1rem;
+}
+
+section.left {
+  flex: 1.5 1 200px;
+}
+section.left h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+}
+section figure img {
+  width: 90%;
+}
+section.left figure figcaption {
+  font-size: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+section.left table,
+tr,
+td {
+  padding: 0.25rem;
+  font-size: 1rem;
+}
+
+section.right {
+  flex: 4 1 500px;
+}
+section.right h2 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+p {
+  font-size: 1rem;
+  padding: 0.5rem 0rem;
+  text-indent: 2rem;
+}
+
+section.right ul {
+  margin-left: 2rem;
+}
+main.no-flex {
+  display: block;
+}
+main section.player div {
+  margin: 2rem;
+  padding: 1rem;
+  border: 3px solid burlywood;
+}
+main section p.no-indent {
+  text-indent: 0;
+}
+
+main section h3 {
+  font-size: 1.5rem;
+  color: rgb(101, 189, 101);
+}
+
+main section h4 {
+  font-size: 1.05rem;
+  color: rgb(76, 142, 76);
+}
+/* ///////japan below//// */
+main section.info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.info figure {
+  flex: 1 1 200px;
+  display: flex;
+}
+
+.info img {
+  width: 100%;
+  align-self: center;
+  padding: 1rem;
+}
+
+.info div.intro {
+  flex: 2 1 400px;
+  padding: 1rem;
+}
+
+.competition h2 {
+  font-size: 1.5rem;
+  color: rgb(76, 142, 76);
+  margin: 0.5rem;
+}
+
+section.competition {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+div.competition {
+  flex: 3 1 300px;
+}
+
+#piechart {
+  flex: 1 1 300px;
+}
+/* china below */
+main.no-flex {
+  display: block;
+}
+div h2 {
+  font-size: 1.5rem;
+  color: rgb(76, 142, 76);
+}
+.team table th {
+  background-color: rgb(75, 143, 233);
+  font-weight: bold;
+  color: #fff;
+}
+
+.team table td {
+  padding-right: 2rem;
+}
+
+.team table {
+  min-width: 1000px;
+}
+/* taiwan below */
+
+ul.taiwan {
+  margin-left: 2rem;
+}

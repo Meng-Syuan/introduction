@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "Enfont";
+  src: url("../EnFont.ttf");
+}
+@font-face {
+  font-family: "ZhFont";
+  src: url("../ZhFont.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  font-family: "EnFont", Times, serif;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+}
+body img.background {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  z-index: -10;
+  bottom: 0;
+  left: 0;
+}
+body header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  border-bottom: 2px #000 dashed;
+  background-color: #fff;
+}
+body header nav ul {
+  display: flex;
+  width: 50vw;
+  height: 10vh;
+}
+body header nav ul li {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+}
+body header nav ul li a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #000;
+  transition: all 0.3s ease;
+  padding: 2.8vh 1.25rem;
+}
+body header nav ul li a:hover {
+  background-color: rgb(252, 215, 105);
+  font-size: 1.3rem;
+}
+body main div.lineback {
+  background-color: #fff;
+  height: 20vh;
+  display: flex;
+  align-items: center;
+}
+body main div.lineback div.orange-line {
+  width: 70vw;
+  height: 1vw;
+  background-color: orange;
+  position: relative;
+  left: 18rem;
+}
+body main div.white-line {
+  width: 70vw;
+  height: 1vh;
+  background-color: #fff;
+  position: relative;
+  left: 18rem;
+  margin: 3rem 0;
+}
+body main section#about-me {
+  background-color: #fff;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10rem;
+}
+body main section#about-me div.about-me {
+  flex: 0 1 300px;
+}
+body main section#about-me div.about-me h1 {
+  font-size: 3.5rem;
+  font-family: "ZhFont", Courier, monospace;
+}
+body main section#about-me div.about-me h2 {
+  text-align: right;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+body main section#about-me div.about-me a {
+  font-size: 1rem;
+  color: #000;
+  text-decoration: none;
+  background-color: rgb(255, 208, 0);
+  border-radius: 20px;
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.25rem 0.5rem;
+  font-weight: bold;
+  transition: 0.2s;
+}
+body main section#about-me div.about-me a:hover {
+  transform: scale(1.2);
+}
+body main section#about-me div.picture {
+  flex: 0 1 300px;
+}
+body main section#about-me div.picture img.photo {
+  width: 18rem;
+}
+body main section#details {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding-left: 2rem;
+  padding: 8rem 0;
+}
+body main section#details section.table {
+  background-color: none;
+  flex: 5 1 500px;
+  margin: 0 2rem;
+  position: relative;
+  z-index: 2;
+}
+body main section#details section.table table {
+  border-collapse: collapse;
+  margin-top: 5rem;
+}
+body main section#details section.table table tr {
+  border-bottom: 2px #777 solid;
+  transition: all 0.2s ease;
+}
+body main section#details section.table table tr:hover {
+  background-color: rgb(252, 215, 105);
+}
+body main section#details section.table table tr td {
+  font-family: "MingLiU", Courier, monospace;
+  padding: 0.5rem 0;
+}
+body main section#details section.table table tr td img {
+  width: 5%;
+}
+body main section#details section.picture {
+  flex: 1 0 400px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+body main section#details section.picture div.photo {
+  width: 25vw;
+  position: relative;
+  z-index: 3;
+}
+body main section#details section.picture div.photo img {
+  width: 100%;
+}
+body main section#details section.picture div.rectangle1 {
+  border: 4px red solid;
+  width: 38vw;
+  height: 25vw;
+  position: absolute;
+  left: -6rem;
+  top: -1rem;
+  z-index: 0;
+}
+body main section#details section.picture div.rectangle2 {
+  border: 5px orange solid;
+  width: 20vw;
+  height: 40vw;
+  position: absolute;
+  left: 10rem;
+  top: -3rem;
+  z-index: 1;
+}
+body main section#details section.picture div.rectangle3 {
+  border: 4px rgba(255, 255, 0, 0.596) solid;
+  width: 40vw;
+  height: 20vw;
+  position: absolute;
+  left: -2rem;
+  top: 15rem;
+  z-index: 1;
+}
+body main section#video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 0;
+}
+body main section#video iframe {
+  width: 60vw;
+  height: 37vw;
+}
+body main section#portfolio {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 5rem 0;
+}
+body main section#portfolio section.myWork {
+  width: 40vw;
+  color: #fff;
+  margin: 5rem 0 4rem;
+}
+body main section#portfolio h2 {
+  font-family: "ZhFont";
+  font-size: 3.5rem;
+}
+body main section#portfolio section.portfolio ol {
+  margin-top: 1.2rem;
+}
+body main section#portfolio section.portfolio ol li {
+  font-size: 2rem;
+  font-family: "ZhFont";
+  padding: 1rem;
+}
+body main section#portfolio section.portfolio ol li a {
+  color: #000;
+  text-decoration: none;
+  font-family: "ZhFont";
+  font-weight: bold;
+  font-size: 2.5rem;
+  transition: all 0.2s ease;
+  color: #fff;
+}
+body main section#portfolio section.portfolio ol li a:hover {
+  color: rgb(252, 215, 105);
+}
+body main section#contact {
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body main section#contact h2 {
+  color: #fff;
+  font-family: "ZhFont";
+  font-size: 2rem;
+  padding: 2rem;
+}
+body main section#contact ul.contact {
+  margin: 4rem 0 5rem;
+}
+body main section#contact ul.contact li {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+body main section#contact ul.contact li p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: "ZhFont";
+}
+body main section#contact ul.contact li.phone {
+  padding-left: 1rem;
+}
+body main section#contact ul.contact li.email img {
+  width: 5rem;
+}
+body main section#contact ul.contact li.icons {
+  margin-left: 12rem;
+}
+body main section#contact ul.contact li.icons img {
+  width: 5rem;
+  padding: 1rem;
+}
+
+@media screen and (max-width: 650px) {
+  body header {
+    position: static;
+    height: 28vh;
+    border-bottom: none;
+  }
+  body header nav ul {
+    display: flex;
+    flex-direction: column;
+    height: 0;
+    padding: 2.5rem;
+  }
+  body header nav ul li {
+    padding: 0.5rem;
+    width: 100vw;
+  }
+  body header nav ul li a {
+    padding: 0.2rem;
+    background-color: #fff;
+  }
+  body header nav ul li a:hover {
+    color: blue;
+    background-color: #fff;
+    border-bottom: solid 2px blue;
+  }
+  body main div.orange-line {
+    display: none;
+  }
+  body main section#about-me {
+    padding-top: 3vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body main section#about-me div.about-me {
+    padding: 0;
+  }
+  body main section#about-me div.picture {
+    flex: 0 1 200px;
+  }
+  body main section#about-me div.picture img.photo {
+    width: 60vw;
+    position: relative;
+  }
+}
+@media screen and (max-width: 960px) {
+  body main section#details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+  }
+  body main section#details section.table {
+    background-color: none;
+    flex: 5 1 500px;
+    margin: 0 2rem;
+  }
+  body main section#details section.table table {
+    border-collapse: collapse;
+    margin: 5rem 0;
+  }
+  body main section#details section.table table tr {
+    border-bottom: 2px #777 solid;
+    transition: all 0.2s ease;
+  }
+  body main section#details section.table table tr:hover {
+    background-color: rgb(252, 215, 105);
+  }
+  body main section#details section.table table tr td {
+    font-family: "MingLiU", Courier, monospace;
+    padding: 0.5rem 0;
+  }
+  body main section#details section.table table tr td img {
+    width: 5%;
+  }
+  body main section#details section.picture {
+    flex: 1 1 400px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  body main section#details section.picture div.photo {
+    width: 40vw;
+    position: relative;
+    z-index: 3;
+  }
+  body main section#details section.picture div.photo img {
+    width: 100%;
+  }
+  body main section#details section.picture div.rectangle1 {
+    display: none;
+  }
+  body main section#details section.picture div.rectangle2 {
+    display: none;
+  }
+  body main section#details section.picture div.rectangle3 {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

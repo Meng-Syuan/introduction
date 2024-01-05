@@ -1,0 +1,199 @@
+$themeColor: rgb(145, 73, 240);
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  img.fixed-img {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: -10;
+    bottom: 0;
+    left: 0;
+  }
+
+  header {
+    background-color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    section.logo {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      flex: 2 1 400px;
+      img.logo {
+        width: 6vw;
+        height: 6vw;
+      }
+      h1 {
+        font-size: 2.5rem;
+      }
+    }
+    nav {
+      flex: 5 1 500px;
+      ul {
+        display: flex;
+        justify-content: space-around;
+        li {
+          list-style-type: none;
+          font-size: 1.35rem;
+          a {
+            text-decoration: none;
+            color: #000;
+            transition: 0.2s;
+            padding-bottom: 0.2rem;
+            &:hover {
+              color: $themeColor;
+              border-bottom: 2px solid $themeColor;
+            }
+          }
+        }
+      }
+    }
+  }
+  section.filter {
+    background-image: url(./images/日本櫻花.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    div.filter {
+      width: 100%;
+      height: 70vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      position: absolute;
+      z-index: -1;
+    }
+    h3 {
+      font-size: 2.5rem;
+      color: #fff;
+      text-align: center;
+    }
+  }
+  section.senery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2.5rem 0;
+    background-color: #fff;
+    h2 {
+      font-size: 2rem;
+      padding-bottom: 1rem;
+    }
+    div.circles {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      div.circle {
+        padding: 0 2.5rem;
+        img {
+          width: 25vh;
+          height: 25vh;
+          border-radius: 50%;
+          transition: 0.2s;
+          &:hover {
+            padding: 0.3rem;
+            border: 2px solid $themeColor;
+          }
+        }
+        p {
+          text-align: center;
+        }
+      }
+    }
+  }
+  section.empty {
+    div.filter {
+      width: 100%;
+      height: 70vh;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h3 {
+        color: #fff;
+        font-size: 2rem;
+      }
+    }
+  }
+  section.google-map {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    h2 {
+      font-size: 2.5rem;
+      padding: 1rem;
+    }
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    iframe {
+      width: 100%;
+      height: 40vh;
+    }
+  }
+  footer {
+  }
+  div.filter {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    img {
+      width: 20%;
+    }
+    h2 {
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    div.links {
+      padding-top: 1rem;
+      a {
+        padding: 1rem;
+        img {
+          width: 5vh;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  body {
+    header {
+      section.logo {
+        display: flex;
+        flex-direction: column;
+        img.logo {
+          width: 50vw;
+          height: 50vw;
+        }
+      }
+      nav {
+        ul {
+          display: flex;
+          flex-direction: column;
+          li {
+            padding: 0.2rem 1rem;
+          }
+        }
+      }
+    }
+  }
+}
